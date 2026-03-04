@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web-forms</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="side">
+          <h2>Create an Account</h2>
+          <form class="form">
+            <div class="row">
+              <div class="col col_half">
+                <label for="first-name" class="label">First name</label>
+                <input type="text" id="first-name" />
+              </div>
+              <div class="col col_half">
+                <label for="last-name" class="label">Last name</label>
+                <input type="text" id="last-name" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col_full">
+                <label for="email" class="label">Email</label>
+                <input type="text" is="email" />
+                <p class="text">
+                  We'll never share your email with anyone else.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form__gender gender">
+                <label>
+                  <input type="radio" name="gender" />
+                  <span class="gender__check">Male</span>
+                </label>
+                <label>
+                  <input type="radio" name="gender" />
+                  <span class="gender__check">Female</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col col_half">
+                <label for="country" class="label">Country </label>
+                <select class="select" id="country">
+                  <option selected disabled>Select</option>
+                  <option>Ukraine</option>
+                  <option>Poland</option>
+                  <option>Germany</option>
+                </select>
+              </div>
+              <div class="col col_half">
+                <label for="city" class="label">City</label>
+                <input type="text" id="city" />
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn btn__full">Sign up</button>
+            </div>
+          </form>
+          <div class="row terms">
+            <p>
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <div class="login">Have an account? <a href="#">Log In</a></div>
+        </div>
+        <div class="side">
+          <h2>Profile</h2>
+          <form class="form">
+            <div class="row">
+              <div class="avatar_preview">
+                <img
+                  id="avatarPreview"
+                  src="./assets/img/profilePic.png"
+                  alt="Avatar"
+                />
+                <div class="avatar_controls">
+                  <div class="add_file">
+                    <div class="file-input-wrapper">
+                      <input type="file" id="avatarInput" accept="image/*" />
+                      <label for="avatarInput" class="custom-file-btn">
+                        <img src="./assets/img/Photo.svg" class="icon" />
+                      </label>
+                    </div>
+                    <button type="button" class="icon-btn" id="removeBtn">
+                      <img src="./assets/img/Trash.svg" alt="trash" />
+                    </button>
+                  </div>
+
+                  <div class="helper-text">Up to 1 MB (300x300 px)</div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col_half">
+                <label for="name">Name</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="col col_half">
+                <label for="email">Email</label>
+                <input type="text" id="email" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col_half">
+                <label for="country" class="label">Country </label>
+                <select class="select" id="country">
+                  <option selected disabled>Select</option>
+                  <option>Ukraine</option>
+                  <option>Poland</option>
+                  <option>Germany</option>
+                </select>
+              </div>
+              <div class="col col_half">
+                <label for="city" class="label">City</label>
+                <input type="text" id="city" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col col_half">
+                <label for="zip" class="label">Zip Code</label>
+                <input type="text" id="zip" />
+              </div>
+              <div class="col col_half">
+                <label for="phone" class="label">Phone Number</label>
+                <input type="text" id="phone" />
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn btn__small">Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
